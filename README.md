@@ -95,25 +95,33 @@ Licensed under the MIT license which is available here, [MIT license](https://gi
 
 ## 🧬 Related
 
-[]()
+[@igor.dvlpr/uarray](https://www.npmjs.com/package/@igor.dvlpr/uarray)
 
-> __
+> _🎉 Provides UArray, an Array type that supports negative indices/indexes, just wrap your regular JavaScript array with UArray() and you are all set! 🙌_
 
-[]()
+<br>
 
-> __
+[@igor.dvlpr/magic-string](https://www.npmjs.com/package/@igor.dvlpr/magic-string)
 
-[]()
+> _🧵 An expressive and chainable library for advanced string manipulations. Supports appending, prepending, trimming, quoting, and path formatting with customizable whitespace handling. Makes advanced String manipulations a piece of cake. 🦥_
 
-> __
+<br>
 
-[]()
+[@igor.dvlpr/strip-html](https://www.npmjs.com/package/@igor.dvlpr/strip-html)
 
-> __
+> _🥞 Removes HTML code from the given string. Can even extract text-only from the given an HTML string. ✨_
 
-[]()
+<br>
 
-> __
+[@igor.dvlpr/extendable-string](https://www.npmjs.com/package/@igor.dvlpr/extendable-string)
+
+> _🦀 ExtendableString allows you to create strings on steroids that have custom transformations applied to them, unlike common, plain strings. 🪀_
+
+<br>
+
+[@igor.dvlpr/duoscribi](https://www.npmjs.com/package/@igor.dvlpr/duoscribi)
+
+> _✒ DúöScríbî allows you to convert letters with diacritics to regular letters. 🤓_
 
 ---
 
