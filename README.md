@@ -1,9 +1,9 @@
-<h1 align="center">{{project}}</h1>
+<h1 align="center">ScRaMbLe</h1>
 
 <br>
 
 <div align="center">
-  {{desc}}
+  🃏 Scrambles (rearranges randomly) Strings and Arrays. 🎋
 </div>
 
 <br>
@@ -62,7 +62,7 @@
 Install it by executing:
 
 ```shell
-npm i '@igor.dvlpr/{{pkg}}'
+npm i '@igor.dvlpr/scramble'
 ```
 
 ---
@@ -75,7 +75,7 @@ npm i '@igor.dvlpr/{{pkg}}'
 
 `example.mts`
 ```ts
-import {  } from '@igor.dvlpr/{{pkg}}'
+import {  } from '@igor.dvlpr/scramble'
 
 ```
 
@@ -83,13 +83,13 @@ import {  } from '@igor.dvlpr/{{pkg}}'
 
 ## 📝 Changelog
 
-📑 The changelog is available here: [CHANGELOG.md](https://github.com/igorskyflyer/{{repo}}/blob/main/CHANGELOG.md).
+📑 The changelog is available here: [CHANGELOG.md](https://github.com/igorskyflyer/npm-scramble/blob/main/CHANGELOG.md).
 
 ---
 
 ## 🪪 License
 
-Licensed under the MIT license which is available here, [MIT license](https://github.com/igorskyflyer/{{repo}}/blob/main/LICENSE).
+Licensed under the MIT license which is available here, [MIT license](https://github.com/igorskyflyer/npm-scramble/blob/main/LICENSE).
 
 ---
 
