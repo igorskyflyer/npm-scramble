@@ -1,7 +1,6 @@
 // Author: Igor Dimitrijević (@igorskyflyer)
 
 /**
- * @interface IStringOptions
  * @description Options for scrambling strings.
  * @property trimSpaces - If true, spaces are removed before scrambling.
  */
@@ -30,9 +29,9 @@ function scrambleWord(word: string): string {
 /**
  * Scrambles the characters of each word in a given string.
  *
- * @param {string} input - The string to be scrambled.
+ * @param input - The string to be scrambled.
  * @param options - Options for scrambling.
- * @returns {string} The scrambled string.
+ * @returns The scrambled string.
  * @throws Will throw an error if the input is not a string.
  */
 export function scrambleString(
@@ -56,8 +55,8 @@ export function scrambleString(
  * Scrambles the elements of an array.
  *
  * @template ArrayType
- * @param {ArrayType[]} input - The array to be scrambled.
- * @returns {ArrayType[]} The scrambled array.
+ * @param input - The array to be scrambled.
+ * @returns The scrambled array.
  * @throws Will throw an error if the input is not an array.
  */
 export function scrambleArray<ArrayType>(input: ArrayType[]): ArrayType[] {
