@@ -2,10 +2,10 @@
 
 /**
  * Options for scrambling strings.
- * @property trimSpaces - If true, spaces are removed before scrambling.
+ * @property trimWhitespace - If true, spaces are removed before scrambling.
  */
 interface IStringOptions {
-  trimSpaces?: boolean
+  trimWhitespace?: boolean
 }
 
 function scrambleWord(word: string): string {
@@ -36,7 +36,7 @@ function scrambleWord(word: string): string {
  */
 export function scrambleString(
   input: string,
-  options: IStringOptions = { trimSpaces: false }
+  options: IStringOptions = { trimWhitespace: false }
 ): string {
   if (typeof input !== 'string') {
     throw new Error('No valid value passed for scrambling.')
@@ -44,7 +44,7 @@ export function scrambleString(
 
   let value: string = input
 
-  if (options.trimSpaces === true) {
+  if (options.trimWhitespace === true) {
     value = value.replace(/\s*/gm, '')
   }
 
@@ -53,8 +53,6 @@ export function scrambleString(
 
 /**
  * Scrambles the elements of an array.
- *
- * @template ArrayType
  * @param input - The array to be scrambled.
  * @returns The scrambled array.
  * @throws Will throw an error if the input is not an array.
