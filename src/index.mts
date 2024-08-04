@@ -1,10 +1,15 @@
 // Author: Igor Dimitrijević (@igorskyflyer)
 
+/**
+ * @interface IStringOptions
+ * @description Options for scrambling strings.
+ * @property trimSpaces - If true, spaces are removed before scrambling.
+ */
 interface IStringOptions {
-  ignoreSpaces?: boolean
+  trimSpaces?: boolean
 }
 
-function scrambleWord(word: string) {
+function scrambleWord(word: string): string {
   if (word.length <= 3) {
     return word
   }
@@ -22,21 +27,45 @@ function scrambleWord(word: string) {
   return word.at(0) + middle.join('') + word.at(-1)
 }
 
+/**
+ * Scrambles the characters of each word in a given string.
+ *
+ * @param {string} input - The string to be scrambled.
+ * @param options - Options for scrambling.
+ * @returns {string} The scrambled string.
+ * @throws Will throw an error if the input is not a string.
+ */
 export function scrambleString(
   input: string,
-  options: IStringOptions = { ignoreSpaces: false }
-) {
+  options: IStringOptions = { trimSpaces: false }
+): string {
+  if (typeof input !== 'string') {
+    throw new Error('No valid value passed for scrambling.')
+  }
+
   let value: string = input
 
-  if (options.ignoreSpaces === true) {
+  if (options.trimSpaces === true) {
     value = value.replace(/\s*/gm, '')
   }
 
   return value.split(' ').map(scrambleWord).join(' ')
 }
 
-export function scrambleArray<ArrayType>(array: ArrayType[]): ArrayType[] {
-  const copy: ArrayType[] = array.slice()
+/**
+ * Scrambles the elements of an array.
+ *
+ * @template ArrayType
+ * @param {ArrayType[]} input - The array to be scrambled.
+ * @returns {ArrayType[]} The scrambled array.
+ * @throws Will throw an error if the input is not an array.
+ */
+export function scrambleArray<ArrayType>(input: ArrayType[]): ArrayType[] {
+  if (!Array.isArray(input)) {
+    throw new Error('No valid array passed for scrambling.')
+  }
+
+  const copy: ArrayType[] = input.slice()
   const count: number = copy.length
 
   if (count === 0) {
