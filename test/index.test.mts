@@ -26,7 +26,7 @@ describe('🧪 ScRaMbLe tests 🧪', () => {
       expect(
         scrambleString(
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-          { trimSpaces: true }
+          { trimWhitespace: true }
         )
       ).not.toBe('Lorem ipsum dolor sit amet, consectetur adipiscing elit.')
     })
