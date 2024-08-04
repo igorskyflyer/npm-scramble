@@ -92,11 +92,13 @@ npm i '@igor.dvlpr/scramble'
 
 ```ts
 interface IStringOptions {
-  trimSpaces?: boolean
+  trimWhitespace?: boolean
 }
 ```
 
-`trimSpaces`, if true all whitespace is removed from input string prior to scrambling its contents.
+<br>
+
+`trimWhitespace`, if true all whitespace is removed from the input string prior to scrambling its contents.
 
 <br>
 
@@ -106,11 +108,37 @@ Will throw an error if the input is not a string.
 
 ---
 
+### `scrambleArray<ArrayType>(input: ArrayType[]): ArrayType[]`
+
+*Scrambles the elements of an array.*  
+
+`input` - The array to be scrambled.  
+
+Returns the scrambled array.  
+
+Will throw an error if the input is not an array.
+
+---
+
 ## ✨ Examples
 
 `example.mts`
 ```ts
-import {  } from '@igor.dvlpr/scramble'
+import { scrambleString, scrambleArray } from '@igor.dvlpr/scramble'
+
+// these are just sample outputs
+// since each invocation reorders
+// elements randomly
+
+console.log(scrambleString(
+  'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+)) // returns 'Leorm isupm dloor sit aetm, ccotnsueetr asdincipig eitl.'
+
+console.log(scrambleString(
+  'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', { trimWhitespace: true }
+)) // returns 'Lpetssgerodcsctcmuaunelrteiisoomirlait,toindmipe.'
+
+console.log(scrambleArray([1, 2, 3, 4, 5, 6, 7, 8])) // [5, 7, 1, 4, 2, 8, 3, 6]
 
 ```
 
