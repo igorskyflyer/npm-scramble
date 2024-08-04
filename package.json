@@ -1,6 +1,6 @@
 {
     "name": "@igor.dvlpr/scramble",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "🃏 Scrambles (rearranges randomly) Strings and Arrays. 🎋",
     "sideEffects": false,
     "engines": {
