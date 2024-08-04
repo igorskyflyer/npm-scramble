@@ -42,6 +42,7 @@
 - [Usage](#-usage)
 - [API](#-api)
   - [scrambleString()](#scramblestringinput-string-options-istringoptions-string)
+  - [scrambleArray()](#scramblearrayarraytypeinput-arraytype-arraytype)
 - [Examples](#-examples)
 - [Changelog](#-changelog)
 - [License](#-license)
@@ -113,6 +114,8 @@ Will throw an error if the input is not a string.
 *Scrambles the elements of an array.*  
 
 `input` - The array to be scrambled.  
+
+<br>
 
 Returns the scrambled array.  
 
