@@ -41,6 +41,7 @@
 - [Features](#-features)
 - [Usage](#-usage)
 - [API](#-api)
+  - [scrambleString()](#scramblestringinput-string-options-istringoptions-string)
 - [Examples](#-examples)
 - [Changelog](#-changelog)
 - [License](#-license)
