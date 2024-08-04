@@ -69,6 +69,40 @@ npm i '@igor.dvlpr/scramble'
 
 ## 🤹🏼 API
 
+### `scrambleString(input: string, options?: IStringOptions): string`
+
+*Scrambles the characters of each word in a given string.*  
+
+`input` - The string to be scrambled.  
+
+<br>
+
+> [!NOTE]
+> Since `Fisher-Yates` algorithm is used for scrambling, a length of > 3 is needed for a word to be able to get scrambled.
+>
+
+<br>
+
+`options` - Options for scrambling, **optional**.
+
+<br>
+
+`options` are defined via an interface `IStringOptions`:
+
+```ts
+interface IStringOptions {
+  trimSpaces?: boolean
+}
+```
+
+`trimSpaces`, if true all whitespace is removed from input string prior to scrambling its contents.
+
+<br>
+
+Returns the scrambled string.  
+
+Will throw an error if the input is not a string.
+
 ---
 
 ## ✨ Examples
