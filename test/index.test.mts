@@ -15,20 +15,21 @@ describe('🧪 ScRaMbLe tests 🧪', () => {
     })
 
     it('should return a scrambled string (with spaces)', () => {
-      expect(
-        scrambleString(
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
-        )
-      ).not.toBe('Lorem ipsum dolor sit amet, consectetur adipiscing elit.')
+      const input: string =
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+      const output: string = scrambleString(input)
+
+      expect(output).not.toBe(input)
+      expect(output).toHaveLength(input.length)
     })
 
     it('should return a scrambled string (without spaces)', () => {
-      expect(
-        scrambleString(
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-          { trimWhitespace: true }
-        )
-      ).not.toBe('Lorem ipsum dolor sit amet, consectetur adipiscing elit.')
+      const input: string =
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+      const output: string = scrambleString(input, { trimWhitespace: true })
+
+      expect(output).not.toBe(input)
+      expect(output.length).toBeLessThan(input.length)
     })
   })
 
@@ -59,7 +60,10 @@ describe('🧪 ScRaMbLe tests 🧪', () => {
 
     it('should return a scrambled number array', () => {
       const input: number[] = [1, 2, 3, 4, 5, 6, 7, 8]
-      expect(scrambleArray(input)).not.toBe(input)
+      const output: number[] = scrambleArray(input)
+
+      expect(output).not.toBe(input)
+      expect(output).toHaveLength(input.length)
     })
   })
 })
