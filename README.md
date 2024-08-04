@@ -55,7 +55,7 @@
 
 - 🫎 reorders elements randomly
 - 🐔 works for strings and arrays
-- 🐲 uses `Fisher-Yates` algorithm (for strings)
+- 🐲 uses `Fisher-Yates` algorithm
 
 <br>
 
