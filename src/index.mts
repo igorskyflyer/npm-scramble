@@ -1,7 +1,7 @@
 // Author: Igor Dimitrijević (@igorskyflyer)
 
 /**
- * @description Options for scrambling strings.
+ * Options for scrambling strings.
  * @property trimSpaces - If true, spaces are removed before scrambling.
  */
 interface IStringOptions {
