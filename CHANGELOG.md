@@ -1,22 +1,25 @@
-## 📒 Changelog
+# 📒 Changelog
 
-### of [@igor.dvlpr/scramble](https://github.com/igorskyflyer/npm-scramble)
+### of [@igorskyflyer/scramble](https://github.com/igorskyflyer/npm-scramble)
 
 <br>
 
-## v1.0.1
+## v1.1.0 (*29-Aug-2025*)
 
-<p align="right"><em>04-Aug-2024</em></p>
+- **💻 dev**: upgrade Node to >= v22
+- **💻 dev**: upgrade dependencies
+
+<br>
+<br>
+
+## v1.0.1 (*04-Aug-2024*)
 
 - **💻 dev**: add more tests
-
 - **📜 docs**: fix documentation
 
 <br>
 <br>
 
-## v1.0.0
-
-<p align="right"><em>04-Aug-2024</em></p>
+## v1.0.0 (*04-Aug-2024*)
 
 - **🚀 launch**: initial release 🎉
