@@ -1,7 +1,7 @@
 // Author: Igor Dimitrijević (@igorskyflyer)
 
 import { describe, expect, it, suite } from 'vitest'
-import { scrambleArray, scrambleString } from '../src/index.mts'
+import { scrambleArray, scrambleString } from '../src/index.js'
 
 describe('🧪 ScRaMbLe tests 🧪', () => {
   suite('scrambleString()', () => {
