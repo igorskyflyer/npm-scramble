@@ -73,7 +73,8 @@ npm i @igorskyflyer/scramble
 
 <br>
 
-> [!NOTE]
+> ℹ️ **NOTE**
+>
 > Since `Fisher-Yates` algorithm is used for scrambling, a length of > 3 is needed for a word to be able to get scrambled.
 >
 
@@ -139,7 +140,6 @@ console.log(scrambleString(
 console.log(scrambleArray([1, 2, 3, 4, 5, 6, 7, 8])) // [5, 7, 1, 4, 2, 8, 3, 6]
 
 ```
-
 
 <br>
 <br>
